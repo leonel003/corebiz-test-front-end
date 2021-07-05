@@ -1,0 +1,520 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+        
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    
+
+}
+
+.nav-bar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-bar>img{
+    width: 181px;
+    height: 41px;
+    margin-left: 341px;
+}
+
+.search{
+    border-bottom: 2px solid #a7a7a7;
+    margin-top: 21.5px;
+    margin-bottom: 29px;
+    width: 718px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-left: 121px;
+    margin-right: 44.48px;
+}
+
+.search>.search-input{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 27px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.search>.search-button{
+    width: 18px;
+    height: 18px;
+}
+
+.nav-bar>.account{
+    display: flex;
+    justify-content: space-between;
+    width: 95.2px;
+    height: 20px;
+    margin-right: 2px;
+}
+
+.account-item{
+    display: flex;
+    align-items: center;
+}
+
+.account-item>img{
+    width: 20px;    
+}
+
+
+.account-item>span{
+    font-size: 13px;
+    font-family: 'Nunito', sans-serif;
+    color: #7A7A7A;
+}
+
+.shopping-cart{
+    display: flex;
+    align-items: center;
+}
+
+.count{
+    width: 14px;
+    height: 14px;
+    background-color: #F8475F;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5;
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+}
+
+
+/*fin nav bar sin responsive--------------------------------------------------------------------------------------------------*/
+
+.main{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.main .services{
+    width: 100%;
+    height: 430px;
+    display: flex;
+    justify-content: center;
+}
+
+.services .slogan{
+    font-family: 'Nunito', sans-serif;
+    width: 989.33px;
+    height: 430px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    justify-content: center;
+
+   
+}
+
+.slogan h1{
+    margin-left: 341px;
+    width: 454px;
+    height: 44.5px;
+    font-size: 30px;
+    margin-bottom: 132.5px;
+    margin-bottom: 12.5px;
+}
+
+.slogan h2{
+    margin-left: 341px;
+    width: 522px;
+    height: 123px;
+    font-size: 48px;
+}
+.services .img{
+    width: 1073px;
+    height: 430px;
+    background: url('resources/img.jpg') no-repeat;
+    
+    background-size:100% 100%;
+}
+
+.products{
+    display:flex;
+    margin-left: 380px;
+    margin-right: 379px;
+    flex-direction: column;
+    
+}
+
+
+
+.title{
+    font-family: 'nunito';
+    width: 145px;
+    height: 28px;
+    margin-top: 43px;
+    margin-bottom: 6px;
+    
+}
+.title h1{
+    font-size: 20px;
+}
+
+hr{
+    width: 65px;
+    border: 3px solid #C0C0C0;
+    margin-bottom: 20px;
+}
+
+.products-items{/*darle bola porqeu es lo de los itemssssssssssssssssssss*/
+    display: flex;
+    width: 100%;
+}
+
+.card{
+    width: 216px;
+    margin-right: 99px;
+}
+
+.card-image{
+    width: 100%;
+    height: 200px;
+}
+
+.card-image img{
+    width: 100%;
+    height: 100%;
+}
+/*-------------------------*/
+
+.card .description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-title{
+    margin-top: 7px;
+    font-family: 'nunito';
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.rating{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+
+.rating span{
+  font-size: 16px;
+    color: #F8475F;
+    margin-right: 2.61px;
+    margin-top: 3.65px;
+}
+
+.list-price{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: 'nunito';
+    margin-top: 7.35px;
+    font-size: 12px;
+    color:#7A7A7A;
+}
+
+.price{
+    margin-top: 2px;
+    font-family: 'nunito';
+    font-size: 18px;
+}
+
+.installments{
+    margin-top: 4px;
+    font-family: 'nunito';
+    font-size: 11px;
+    color:#7A7A7A;
+}
+
+.buy{
+    display: flex;
+    width: 125.8px;
+    height: 32.42px;
+    margin-bottom: 14.41px;
+    visibility: hidden;
+}
+
+.buy-btn{
+    width: 100%;
+    background:#000000;
+    color:#ffff;
+    border:none;
+    border-radius: 5px;
+    font-family: 'nunito';
+    font-size: 12;
+    text-transform: uppercase;
+}
+
+.buy-btn:hover{
+    cursor: pointer;
+}
+
+.card:hover{
+    background-color: #E6E8EA;
+}
+.card:hover .buy{
+    visibility: visible;
+    
+}
+
+.suscribe{
+    display: flex;
+    background: #F2F2F2;
+    width: 100%;
+    height: 146px;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 53px;
+}
+
+.suscribe h1{
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    margin-top: 16px;
+}
+
+.suscribe-form{
+    margin-top: 15px;    
+}
+
+.suscribe-form input{
+    border: none;
+    width: 280px;
+    height: 48px;
+    margin: 8px;
+    font-family: 'Lato', sans-serif;
+    padding-left: 16px;
+}
+
+
+.suscribe-form .btn-submit{
+    padding:0;
+    border: none;
+    width: 140px;
+    height: 48px;
+    background: #000000;
+    color: #ffffff;
+}
+
+.btn-submit:hover{
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    height: 213px;
+    display: flex;
+    background: #000000;
+    
+}
+
+.location{
+    width: 238px;
+    margin-left: 345px;
+    margin-right: 250px;
+    font-family: 'nunito';
+    color :#ffffff;
+}
+
+.location h1{
+    margin-top: 25px;
+    margin-bottom: 16.5px;
+    font-size: 20px;
+}
+
+.location hr{
+    width: 65px;
+    border: 3px solid #ffffff;
+    margin-bottom: 20px;
+    width: 44.94px;
+}
+
+.location p{
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.contact{
+    width: 228.66px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+
+.contact button{
+    font-family: 'nunito';
+    background: #FFFFFF;
+    width: 100%;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 24.71px;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact button:hover{
+    cursor: pointer;
+}
+
+.copyright{
+    width: 172.36px;
+    font-family: 'nunito';
+    color:#ffffff;
+    font-size: 10.6px;
+    margin-left: 332.33px;
+    display: flex;
+    align-items: center;
+}
+
+.corebiz{
+    margin-right: 27.24px;
+}
+
+.vtex img{
+    width: 80px;
+    height: 30px;
+}
+
+.end{
+    width: 100%;
+    height: 10px;
+    background: #C0C0C0;
+}
+
+@media(max-width: 428px){
+    header{
+        width: 100%;
+        height: 115pt;
+        display: flex;
+        
+    
+    }
+    
+    .nav-bar{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .nav-bar>img{
+        width: 145.79pt;
+        height: 33.44pt;
+        margin-left: 141.77pt;
+        margin-bottom: 33pt;
+    }
+    
+    .search{
+        position: absolute;
+        margin-top: 75.81pt;
+        border-bottom: 2px solid #a7a7a7;
+        width: 374pt;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+    }
+    
+    .search>.search-input{
+        border: none;
+        outline: none;
+        height: 16.13pt;
+        font-family: 'Nunito', sans-serif;
+    }
+    
+    .search>.search-button{
+        width: 24pt;
+        height: 24pt;
+    }
+    
+    .nav-bar>.account{
+        display: none;
+    }
+    
+    .account-item{
+        margin-left:72.95pt;
+        
+        display: flex;
+        align-items: center;
+    }
+    
+    .account-item>img{
+        width: 20px;    
+    }
+    
+    
+    .account-item>span{
+        font-size: 13px;
+        font-family: 'Nunito', sans-serif;
+        color: #7A7A7A;
+    }
+    
+    .shopping-cart{
+        display: flex;
+        align-items: center;
+    }
+    
+    .count{
+        width: 14px;
+        height: 14px;
+        background-color: #F8475F;
+        border-radius: 10px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5;
+        font-family: 'Nunito', sans-serif;
+        font-size: 10px;
+    }
+}
+
+.arrows{
+    display: flex;
+    /*width: 100%;*/
+    position: absolute;
+    margin-top: 262px;
+    
+    
+}
+
+.left{
+    position:absolute;
+    right: 26.54px;
+
+}
+
+.right{
+    position:absolute;
+    left: 1200px;
+
+}

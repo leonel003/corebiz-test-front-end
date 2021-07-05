@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <!-- https://material.io/resources/icons/?style=baseline -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <!-- https://material.io/resources/icons/?style=outline -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">  
+                <img src="resources/corebiz-logo.svg" alt="">
+            <div class="search">
+                <input type="text" class="search-input" placeholder="¿Qué estás buscando?">
+                <a href="" class="search-button">
+                    <img src="resources/search-icon.svg" alt="">
+                </a>
+            </div>
+            <div class="account">
+                <a class="account-item">
+                <img src="resources/user-icon.svg" alt="">
+                <span>Mi Cuenta</span>
+                </a>
+            </div>
+            <div class="shopping-cart">
+                <img src="resources/shopping-cart.png" alt="">
+                <div class="count">
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="services">
+            <div class="slogan">
+                <h1>¡Hola! ¿Qué es lo que buscas?</h1>
+                <h2>Crear o migrar tu comercio electrónico</h2>
+            </div>
+            <div class="img">
+            </div>
+            </div>
+        </section>
+        <section class="products">
+            <div class="title">
+                <h1>Más vendidos</h1>
+            </div>
+                <hr>
+                <div class="arrows">
+                    <div class="left"><span class="material-icons-outlined">
+                        arrow_back_ios
+                        </span></div>
+                    <div class="right"><span class="material-icons-outlined">
+                        arrow_forward_ios
+                        </span></div>
+                </div>
+                <div class="products-items">
+                </div>
+        </section>
+        <section class="suscribe">
+            <h1>¡Únete a nuestras novedades y promociones!</h1>
+            <form action="https://corebiz-test.herokuapp.com/api/v1/newsletter" class="suscribe-form" method="POST">
+                <input type="text" name="name" id="input-name" placeholder="ingresa tu nombre">
+                <input type="email" name="email" id="input-email" placeholder="ingresa tu mail">
+                <input type="submit" value="Suscribirme" class="btn-submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="location">
+            <h1>ubicación</h1>
+            <hr>
+            <p> Avenida Andrômeda, 2000. Bloco 6 e 8</p>
+            <p> Alphavile SP</p>
+            <p>brasil@corebiz.ag</p>
+            <p>+55 11 3090 1039</p>
+        </div>
+        <div class="contact">
+            <button class="contact-us">
+                <span class="material-icons">
+                    email
+                    </span>
+                contáctanos
+            </button>
+            <button class="talk-to-us">
+                <span class="material-icons">
+                    headset_mic
+                    </span>
+                habla con un consultor
+            </button>
+        </div>
+        <div class="copyright">
+            <div class="corebiz">
+                <p>Desarrolado por</p>
+                <img src="resources\site-logo-corebiz-preto-cinza.svg" alt="">
+            </div>
+            <div class="vtex">
+                <p>Powered by</p>
+                <img src="resources\vtex.png" alt="">
+            </div>
+            
+        </div>
+    </footer>
+    <div class="end"></div>
+    <script src="index.js"></script>
+</body>
+
+</html>
